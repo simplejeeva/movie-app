@@ -8,6 +8,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import InfoIcon from "@mui/icons-material/Info";
 import { useNavigate } from "react-router-dom";
+import { API } from "./global";
 
 export function Movie({ movie, id, Deletbutton, editButton }) {
   let style = {
