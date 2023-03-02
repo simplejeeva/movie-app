@@ -49,7 +49,7 @@ function Editmovieform({ Movie }) {
   const navigate = useNavigate();
   const updatemovie = async (updatedmovie) => {
     console.log(updatedmovie);
-    await fetch(`${API}/movies/${Movie.id}`, {
+    await fetch(`${API}/movies/${Movie._id}`, {
       method: "PUT",
       body: JSON.stringify(updatedmovie),
       headers: { "Content-Type": "application/json" },

@@ -30,13 +30,13 @@ export function Movielist() {
       <div className="main">
         {movielist.map((mv) => (
           <Movie
-            key={mv.id}
+            key={mv._id}
             movie={mv}
-            id={mv.id}
+            id={mv._id}
             Deletbutton={
               <IconButton
                 color="secondary"
-                onClick={() => deletMovie(mv.id)}
+                onClick={() => deletMovie(mv._id)}
                 sx={{ marginLeft: "auto" }}
               >
                 <DeleteIcon />
@@ -45,7 +45,7 @@ export function Movielist() {
             editButton={
               <IconButton
                 color="error"
-                onClick={() => navigate(`/movies/edit/${mv.id}`)}
+                onClick={() => navigate(`/movies/edit/${mv._id}`)}
                 sx={{ marginLeft: "auto" }}
               >
                 <EditIcon />
